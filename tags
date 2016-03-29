@@ -1,0 +1,244 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AbstractProductAPI	speedycloud/__init__.py	/^from speedycloud.products import AbstractProductAPI$/;"	i
+AbstractProductAPI	speedycloud/object_storage/__init__.py	/^class AbstractProductAPI(object):$/;"	c
+AbstractProductAPI	speedycloud/object_storage/object_storage.py	/^from speedycloud.object_storage import AbstractProductAPI$/;"	i
+AbstractProductAPI	speedycloud/products/__init__.py	/^class AbstractProductAPI(object):$/;"	c
+AbstractProductAPI	speedycloud/products/cache.py	/^from speedycloud.products import AbstractProductAPI$/;"	i
+AbstractProductAPI	speedycloud/products/cdn.py	/^from speedycloud.products import AbstractProductAPI$/;"	i
+AbstractProductAPI	speedycloud/products/cloud_server.py	/^from speedycloud.products import AbstractProductAPI$/;"	i
+AbstractProductAPI	speedycloud/products/cloud_volume.py	/^from speedycloud.products import AbstractProductAPI$/;"	i
+AbstractProductAPI	speedycloud/products/database.py	/^from speedycloud.products import AbstractProductAPI$/;"	i
+AbstractProductAPI	speedycloud/products/load_balancer.py	/^from speedycloud.products import AbstractProductAPI$/;"	i
+AbstractProductAPI	speedycloud/products/network.py	/^from speedycloud.products import AbstractProductAPI$/;"	i
+AbstractProductAPI	speedycloud/products/router.py	/^from speedycloud.products import AbstractProductAPI$/;"	i
+AbstractProductAPI	speedycloud/products/video.py	/^from speedycloud.products import AbstractProductAPI$/;"	i
+BASE_PATH	speedycloud/object_storage/object_storage.py	/^    BASE_PATH = '\/'$/;"	v	class:ObjectStorageAPI
+BASE_PATH	speedycloud/products/cdn.py	/^    BASE_PATH = "\/api\/v1\/products\/cdns\/"$/;"	v	class:CDNAPI
+BASE_PATH	speedycloud/products/cloud_server.py	/^    BASE_PATH = '\/api\/v1\/products\/cloud_servers\/'$/;"	v	class:CloudServerAPI
+BASE_PATH	speedycloud/products/cloud_volume.py	/^    BASE_PATH = '\/api\/v1\/products\/cloud_volumes\/'$/;"	v	class:CloudVolumeAPI
+BASE_PATH	speedycloud/products/load_balancer.py	/^    BASE_PATH = '\/api\/v1\/products\/load_balancers\/'$/;"	v	class:LoadBalancerAPI
+BASE_PATH	speedycloud/products/network.py	/^    BASE_PATH = "\/api\/v1\/products\/networks\/"$/;"	v	class:NetworkAPI
+BASE_PATH	speedycloud/products/router.py	/^    BASE_PATH = "\/api\/v1\/products\/routers"$/;"	v	class:RouterAPI
+BASE_PATH	speedycloud/products/video.py	/^    BASE_PATH = "\/api\/v1\/video\/"$/;"	v	class:VideoAPI
+CDNAPI	speedycloud/__init__.py	/^from speedycloud.products.cdn import CDNAPI$/;"	i
+CDNAPI	speedycloud/products/cdn.py	/^class CDNAPI(AbstractProductAPI):$/;"	c
+CacheAPI	speedycloud/__init__.py	/^from speedycloud.products.cache import CacheAPI$/;"	i
+CacheAPI	speedycloud/products/cache.py	/^class CacheAPI(AbstractProductAPI):$/;"	c
+CloudServerAPI	speedycloud/__init__.py	/^from speedycloud.products.cloud_server import CloudServerAPI$/;"	i
+CloudServerAPI	speedycloud/products/cloud_server.py	/^class CloudServerAPI(AbstractProductAPI):$/;"	c
+CloudVolumeAPI	speedycloud/__init__.py	/^from speedycloud.products.cloud_volume import CloudVolumeAPI$/;"	i
+CloudVolumeAPI	speedycloud/products/cloud_volume.py	/^class CloudVolumeAPI(AbstractProductAPI):$/;"	c
+ConnectionPool	speedycloud/object_storage/__init__.py	/^class ConnectionPool:$/;"	c
+ConnectionPool	speedycloud/products/__init__.py	/^class ConnectionPool:$/;"	c
+DatabaseAPI	speedycloud/__init__.py	/^from speedycloud.products.database import DatabaseAPI$/;"	i
+DatabaseAPI	speedycloud/products/database.py	/^class DatabaseAPI(AbstractProductAPI):$/;"	c
+LoadBalancerAPI	speedycloud/__init__.py	/^from speedycloud.products.load_balancer import LoadBalancerAPI$/;"	i
+LoadBalancerAPI	speedycloud/products/load_balancer.py	/^class LoadBalancerAPI(AbstractProductAPI):$/;"	c
+NetworkAPI	speedycloud/__init__.py	/^from speedycloud.products.network import NetworkAPI$/;"	i
+NetworkAPI	speedycloud/products/network.py	/^class NetworkAPI(AbstractProductAPI):$/;"	c
+ObjectStorageAPI	speedycloud/__init__.py	/^from speedycloud.object_storage.object_storage import ObjectStorageAPI$/;"	i
+ObjectStorageAPI	speedycloud/object_storage/object_storage.py	/^class ObjectStorageAPI(AbstractProductAPI):$/;"	c
+ProductAPIError	speedycloud/object_storage/__init__.py	/^class ProductAPIError(Exception):$/;"	c
+ProductAPIError	speedycloud/products/__init__.py	/^class ProductAPIError(Exception):$/;"	c
+RouterAPI	speedycloud/__init__.py	/^from speedycloud.products.router import RouterAPI$/;"	i
+RouterAPI	speedycloud/products/router.py	/^class RouterAPI(AbstractProductAPI):$/;"	c
+VideoAPI	speedycloud/__init__.py	/^from speedycloud.products.video import VideoAPI$/;"	i
+VideoAPI	speedycloud/products/video.py	/^class VideoAPI(AbstractProductAPI):$/;"	c
+__author__	speedycloud/tests/__init__.py	/^__author__ = 'zunwang'$/;"	v
+__clean	speedycloud/object_storage/__init__.py	/^    def __clean(self):$/;"	m	class:ConnectionPool	file:
+__clean	speedycloud/products/__init__.py	/^    def __clean(self):$/;"	m	class:ConnectionPool	file:
+__init__	speedycloud/object_storage/__init__.py	/^    def __init__(self, access_key, secret_key, protocol='http'):$/;"	m	class:AbstractProductAPI
+__init__	speedycloud/object_storage/__init__.py	/^    def __init__(self, host, protocol, size=10):$/;"	m	class:ConnectionPool
+__init__	speedycloud/products/__init__.py	/^    def __init__(self, access_key, secret_key, protocol='http'):$/;"	m	class:AbstractProductAPI
+__init__	speedycloud/products/__init__.py	/^    def __init__(self, host, protocol, size=10):$/;"	m	class:ConnectionPool
+_cloud_server_simple_operations	speedycloud/products/cloud_server.py	/^    def _cloud_server_simple_operations(self, operation, cloud_server_id):$/;"	m	class:CloudServerAPI
+_create_connection	speedycloud/object_storage/__init__.py	/^    def _create_connection(self):$/;"	m	class:ConnectionPool
+_create_connection	speedycloud/products/__init__.py	/^    def _create_connection(self):$/;"	m	class:ConnectionPool
+_encode_params	speedycloud/object_storage/__init__.py	/^    def _encode_params(self, params):$/;"	m	class:AbstractProductAPI
+_encode_params	speedycloud/products/__init__.py	/^    def _encode_params(self, params):$/;"	m	class:AbstractProductAPI
+_generate_headers	speedycloud/object_storage/__init__.py	/^    def _generate_headers(self, method, path, params):$/;"	m	class:AbstractProductAPI
+_generate_headers	speedycloud/products/__init__.py	/^    def _generate_headers(self, method, path):$/;"	m	class:AbstractProductAPI
+_get_path	speedycloud/object_storage/object_storage.py	/^    def _get_path(self, suffix):$/;"	m	class:ObjectStorageAPI
+_get_path	speedycloud/products/cdn.py	/^    def _get_path(self, suffix):$/;"	m	class:CDNAPI
+_get_path	speedycloud/products/cloud_server.py	/^    def _get_path(self, suffix):$/;"	m	class:CloudServerAPI
+_get_path	speedycloud/products/cloud_volume.py	/^    def _get_path(self, suffix):$/;"	m	class:CloudVolumeAPI
+_get_path	speedycloud/products/load_balancer.py	/^    def _get_path(self, suffix):$/;"	m	class:LoadBalancerAPI
+_get_path	speedycloud/products/network.py	/^    def _get_path(self, suffix):$/;"	m	class:NetworkAPI
+_get_path	speedycloud/products/router.py	/^    def _get_path(self, suffix):$/;"	m	class:RouterAPI
+_get_path	speedycloud/products/video.py	/^    def _get_path(self, suffix):$/;"	m	class:VideoAPI
+add_application	speedycloud/products/load_balancer.py	/^    def add_application(self, load_balancer_id, frontend, backend, protocol, strategy, check_interval, rise_times,$/;"	m	class:LoadBalancerAPI
+add_backend_cache	speedycloud/products/load_balancer.py	/^    def add_backend_cache(self, load_balancer_id, cache_id, weight, ip_address):$/;"	m	class:LoadBalancerAPI
+add_backend_cloud_server	speedycloud/products/load_balancer.py	/^    def add_backend_cloud_server(self, load_balancer_id, cloud_server_id, weight, ip_address):$/;"	m	class:LoadBalancerAPI
+add_backend_database	speedycloud/products/load_balancer.py	/^    def add_backend_database(self, load_balancer_id, database_id, weight, ip_address):$/;"	m	class:LoadBalancerAPI
+add_preload	speedycloud/products/cdn.py	/^    def add_preload(self, preload_urls):$/;"	m	class:CDNAPI
+add_refresh	speedycloud/products/cdn.py	/^    def add_refresh(self, refresh_type, refresh_url_list):$/;"	m	class:CDNAPI
+attach_disk	speedycloud/products/cloud_server.py	/^    def attach_disk(self, cloud_server_id, volume_name):$/;"	m	class:CloudServerAPI
+backup	speedycloud/products/cloud_server.py	/^    def backup(self, cloud_server_id, name):$/;"	m	class:CloudServerAPI
+backups	speedycloud/products/cloud_server.py	/^    def backups(self, id):$/;"	m	class:CloudServerAPI
+base64	speedycloud/object_storage/__init__.py	/^import base64$/;"	i
+change_image	speedycloud/products/cloud_server.py	/^    def change_image(self, cloud_server_id, image_name):$/;"	m	class:CloudServerAPI
+create	speedycloud/products/network.py	/^    def create(self, available_zone):$/;"	m	class:NetworkAPI
+create_bucket	speedycloud/object_storage/object_storage.py	/^    def create_bucket(self, bucket):$/;"	m	class:ObjectStorageAPI
+create_cache	speedycloud/products/network.py	/^    def create_cache(self, available_zone, isp, image, memory, disk, bandwidth):$/;"	m	class:NetworkAPI
+create_cache_api	speedycloud/__init__.py	/^def create_cache_api(access_key, secret_key):$/;"	f
+create_cdn_api	speedycloud/__init__.py	/^def create_cdn_api(access_key, secret_key):$/;"	f
+create_cloud_server_api	speedycloud/__init__.py	/^def create_cloud_server_api(access_key, secret_key):$/;"	f
+create_cloud_volume_api	speedycloud/__init__.py	/^def create_cloud_volume_api(access_key, secret_key):$/;"	f
+create_database	speedycloud/products/network.py	/^    def create_database(self, available_zone, isp, image, memory, disk, bandwidth):$/;"	m	class:NetworkAPI
+create_database_api	speedycloud/__init__.py	/^def create_database_api(access_key, secret_key):$/;"	f
+create_load_balance	speedycloud/products/load_balancer.py	/^    def create_load_balance(self, available_zone, isp, bandwidth):$/;"	m	class:LoadBalancerAPI
+create_load_balancer_api	speedycloud/__init__.py	/^def create_load_balancer_api(access_key, secret_key):$/;"	f
+create_nat_role	speedycloud/products/router.py	/^    def create_nat_role(self, id, port, protocol, target_ip, target_port):$/;"	m	class:RouterAPI
+create_network_api	speedycloud/__init__.py	/^def create_network_api(access_key, secret_key):$/;"	f
+create_object_storage_api	speedycloud/__init__.py	/^def create_object_storage_api(access_key, secret_key):$/;"	f
+create_router_api	speedycloud/__init__.py	/^def create_router_api(access_key, secret_key):$/;"	f
+create_sign	speedycloud/object_storage/__init__.py	/^    def create_sign(self, method, path, params):$/;"	m	class:AbstractProductAPI
+create_sign_str	speedycloud/object_storage/__init__.py	/^    def create_sign_str(self, **params):$/;"	m	class:AbstractProductAPI
+create_snapshot	speedycloud/products/cloud_volume.py	/^    def create_snapshot(self, cloud_volume_id):$/;"	m	class:CloudVolumeAPI
+create_video_api	speedycloud/__init__.py	/^def create_video_api(access_key, secret_key):$/;"	f
+create_vod	speedycloud/products/video.py	/^    def create_vod(self, name, uploaded_video_file, origin_image_file, introduction, labels, upload_time):$/;"	m	class:VideoAPI
+datetime	speedycloud/object_storage/__init__.py	/^from datetime import datetime$/;"	i
+datetime	speedycloud/products/__init__.py	/^from datetime import datetime$/;"	i
+datetime	speedycloud/products/cdn.py	/^from datetime import datetime$/;"	i
+delete	speedycloud/object_storage/__init__.py	/^    def delete(self, path, data=None, params={}):$/;"	m	class:AbstractProductAPI
+delete	speedycloud/products/network.py	/^    def delete(self, network_id):$/;"	m	class:NetworkAPI
+delete_application	speedycloud/products/load_balancer.py	/^    def delete_application(self, load_balancer_id, application_id):$/;"	m	class:LoadBalancerAPI
+delete_backend	speedycloud/products/load_balancer.py	/^    def delete_backend(self, load_balancer_id, back_id):$/;"	m	class:LoadBalancerAPI
+delete_backup	speedycloud/products/cloud_server.py	/^    def delete_backup(self, cloud_server_id, name):$/;"	m	class:CloudServerAPI
+delete_bucket	speedycloud/object_storage/object_storage.py	/^    def delete_bucket(self, bucket):$/;"	m	class:ObjectStorageAPI
+delete_nat_role	speedycloud/products/router.py	/^    def delete_nat_role(self, id, port, protocol):$/;"	m	class:RouterAPI
+delete_object_data	speedycloud/object_storage/object_storage.py	/^    def delete_object_data(self, bucket, key):$/;"	m	class:ObjectStorageAPI
+delete_preload	speedycloud/products/cdn.py	/^    def delete_preload(self, id_list):$/;"	m	class:CDNAPI
+delete_refresh	speedycloud/products/cdn.py	/^    def delete_refresh(self, id_list):$/;"	m	class:CDNAPI
+delete_snapshot	speedycloud/products/cloud_volume.py	/^    def delete_snapshot(self, cloud_volume_id, snapshot):$/;"	m	class:CloudVolumeAPI
+delete_vod	speedycloud/products/video.py	/^    def delete_vod(self, id):$/;"	m	class:VideoAPI
+detach_disk	speedycloud/products/cloud_server.py	/^    def detach_disk(self, cloud_server_id, volume_name):$/;"	m	class:CloudServerAPI
+detail	speedycloud/products/cdn.py	/^    def detail(self, id):$/;"	m	class:CDNAPI
+detail	speedycloud/products/cloud_server.py	/^    def detail(self, id):$/;"	m	class:CloudServerAPI
+detail	speedycloud/products/cloud_volume.py	/^    def detail(self, cloud_volume_id):$/;"	m	class:CloudVolumeAPI
+detail	speedycloud/products/load_balancer.py	/^    def detail(self, load_balancer_id):$/;"	m	class:LoadBalancerAPI
+detail	speedycloud/products/network.py	/^    def detail(self, network_id):$/;"	m	class:NetworkAPI
+detail	speedycloud/products/router.py	/^    def detail(self, id):$/;"	m	class:RouterAPI
+download_object_data	speedycloud/object_storage/object_storage.py	/^    def download_object_data(self, bucket, key):$/;"	m	class:ObjectStorageAPI
+edit_nat_role	speedycloud/products/router.py	/^    def edit_nat_role(self, id, port, protocol, target_ip, target_port):$/;"	m	class:RouterAPI
+error	setup.py	/^    error = 'ERROR: speedycloud-sdk requires Python Version 2.6 or above.'$/;"	v
+etree	speedycloud/object_storage/object_storage.py	/^from lxml import etree$/;"	i
+get	speedycloud/object_storage/__init__.py	/^    def get(self, path, data=None, params={}):$/;"	m	class:AbstractProductAPI
+get	speedycloud/products/__init__.py	/^    def get(self, path, params=None):$/;"	m	class:AbstractProductAPI
+get_available_zone	speedycloud/products/__init__.py	/^    def get_available_zone(self):$/;"	m	class:AbstractProductAPI
+get_available_zone_names	speedycloud/products/__init__.py	/^    def get_available_zone_names(self):$/;"	m	class:AbstractProductAPI
+get_bandwidth	speedycloud/products/cdn.py	/^    def get_bandwidth(self, ids, duration=None):$/;"	m	class:CDNAPI
+get_connection	speedycloud/object_storage/__init__.py	/^    def get_connection(self):$/;"	m	class:ConnectionPool
+get_connection	speedycloud/products/__init__.py	/^    def get_connection(self):$/;"	m	class:ConnectionPool
+get_database_images	speedycloud/products/__init__.py	/^    def get_database_images(self):$/;"	m	class:AbstractProductAPI
+get_images_for_cache	speedycloud/products/__init__.py	/^    def get_images_for_cache(self):$/;"	m	class:AbstractProductAPI
+get_images_for_database	speedycloud/products/__init__.py	/^    def get_images_for_database(self):$/;"	m	class:AbstractProductAPI
+get_instance	speedycloud/object_storage/__init__.py	/^    def get_instance(cls, host, protocol, size=10):$/;"	m	class:ConnectionPool
+get_instance	speedycloud/products/__init__.py	/^    def get_instance(cls, host, protocol, size=10):$/;"	m	class:ConnectionPool
+get_os_images	speedycloud/products/__init__.py	/^    def get_os_images(self, az_name):$/;"	m	class:AbstractProductAPI
+get_support_isps	speedycloud/products/__init__.py	/^    def get_support_isps(self, az_name):$/;"	m	class:AbstractProductAPI
+groups	speedycloud/products/network.py	/^    def groups(self):$/;"	m	class:NetworkAPI
+groups	speedycloud/products/router.py	/^    def groups(self):$/;"	m	class:RouterAPI
+hashlib	speedycloud/object_storage/__init__.py	/^import hashlib$/;"	i
+hashlib	speedycloud/products/__init__.py	/^import hashlib$/;"	i
+hmac	speedycloud/object_storage/__init__.py	/^import hmac$/;"	i
+hmac	speedycloud/products/__init__.py	/^import hmac$/;"	i
+httplib	speedycloud/object_storage/__init__.py	/^import httplib$/;"	i
+httplib	speedycloud/products/__init__.py	/^import httplib$/;"	i
+initialize	speedycloud/object_storage/__init__.py	/^    def initialize(self):$/;"	m	class:ConnectionPool
+initialize	speedycloud/products/__init__.py	/^    def initialize(self):$/;"	m	class:ConnectionPool
+jobs	speedycloud/products/cloud_server.py	/^    def jobs(self, id):$/;"	m	class:CloudServerAPI
+jobs	speedycloud/products/cloud_volume.py	/^    def jobs(self, cloud_volume_id):$/;"	m	class:CloudVolumeAPI
+jobs	speedycloud/products/router.py	/^    def jobs(self, id):$/;"	m	class:RouterAPI
+join	speedycloud/products/router.py	/^    def join(self, id, network, ip, mask):$/;"	m	class:RouterAPI
+json	speedycloud/products/__init__.py	/^import json$/;"	i
+json	speedycloud/products/cdn.py	/^import json$/;"	i
+leave	speedycloud/products/router.py	/^    def leave(self, id, network):$/;"	m	class:RouterAPI
+list	speedycloud/object_storage/object_storage.py	/^    def list(self, bucket):$/;"	m	class:ObjectStorageAPI
+list	speedycloud/products/cache.py	/^    def list(self):$/;"	m	class:CacheAPI
+list	speedycloud/products/cdn.py	/^    def list(self):$/;"	m	class:CDNAPI
+list	speedycloud/products/cloud_server.py	/^    def list(self):$/;"	m	class:CloudServerAPI
+list	speedycloud/products/cloud_volume.py	/^    def list(self):$/;"	m	class:CloudVolumeAPI
+list	speedycloud/products/database.py	/^    def list(self):$/;"	m	class:DatabaseAPI
+list	speedycloud/products/load_balancer.py	/^    def list(self):$/;"	m	class:LoadBalancerAPI
+list	speedycloud/products/network.py	/^    def list(self):$/;"	m	class:NetworkAPI
+list	speedycloud/products/router.py	/^    def list(self):$/;"	m	class:RouterAPI
+logs	speedycloud/products/cdn.py	/^    def logs(self, id, start_date, end_date):$/;"	m	class:CDNAPI
+modify	speedycloud/products/cdn.py	/^    def modify(self, id, domain, origin_ip, cache_type):$/;"	m	class:CDNAPI
+modify_vod	speedycloud/products/video.py	/^    def modify_vod(self, id, name, labels, introduction, origin_image_file):$/;"	m	class:VideoAPI
+name	setup.py	/^    name='speedycloud-sdk',$/;"	v
+packages	setup.py	/^    packages=packages$/;"	v
+packages	setup.py	/^packages = [$/;"	v
+parseheader	speedycloud/object_storage/object_storage.py	/^    def parseheader(self, header):$/;"	m	class:ObjectStorageAPI
+path	speedycloud/products/__init__.py	/^    path = '\/api\/v1\/availability_zones\/'$/;"	v	class:AbstractProductAPI
+pause	speedycloud/products/cdn.py	/^    def pause(self, id):$/;"	m	class:CDNAPI
+post	speedycloud/object_storage/__init__.py	/^    def post(self, path, data=None, params={}):$/;"	m	class:AbstractProductAPI
+post	speedycloud/products/__init__.py	/^    def post(self, path, params=None):$/;"	m	class:AbstractProductAPI
+preload_list	speedycloud/products/cdn.py	/^    def preload_list(self):$/;"	m	class:CDNAPI
+process_response	speedycloud/products/__init__.py	/^    def process_response(self, status_code, response):$/;"	m	class:AbstractProductAPI
+provision	speedycloud/products/cloud_server.py	/^    def provision(self, available_zone, isp, image, cpu, memory, disk, bandwidth):$/;"	m	class:CloudServerAPI
+provision	speedycloud/products/cloud_volume.py	/^    def provision(self, available_zone, size):$/;"	m	class:CloudVolumeAPI
+put	speedycloud/object_storage/__init__.py	/^    def put(self, path, data=None, params={}):$/;"	m	class:AbstractProductAPI
+put_connection	speedycloud/object_storage/__init__.py	/^    def put_connection(self, connection):$/;"	m	class:ConnectionPool
+put_connection	speedycloud/products/__init__.py	/^    def put_connection(self, connection):$/;"	m	class:ConnectionPool
+query_bucket_acl	speedycloud/object_storage/object_storage.py	/^    def query_bucket_acl(self, bucket):$/;"	m	class:ObjectStorageAPI
+query_object_version	speedycloud/object_storage/object_storage.py	/^    def query_object_version(self, bucket, key):$/;"	m	class:ObjectStorageAPI
+reconnect	speedycloud/object_storage/__init__.py	/^    def reconnect(self, connection):$/;"	m	class:ConnectionPool
+reconnect	speedycloud/products/__init__.py	/^    def reconnect(self, connection):$/;"	m	class:ConnectionPool
+redo_refresh	speedycloud/products/cdn.py	/^    def redo_refresh(self, refresh_id):$/;"	m	class:CDNAPI
+refresh_list	speedycloud/products/cdn.py	/^    def refresh_list(self):$/;"	m	class:CDNAPI
+rejoin	speedycloud/products/router.py	/^    def rejoin(self, id, network, ip, mask):$/;"	m	class:RouterAPI
+reload	speedycloud/products/router.py	/^    def reload(self, id):$/;"	m	class:RouterAPI
+request	speedycloud/object_storage/__init__.py	/^    def request(self, method, path, data, params):$/;"	m	class:AbstractProductAPI
+request	speedycloud/products/__init__.py	/^    def request(self, method, path, params):$/;"	m	class:AbstractProductAPI
+restart	speedycloud/products/cloud_server.py	/^    def restart(self, cloud_server_id):$/;"	m	class:CloudServerAPI
+restore_backup	speedycloud/products/cloud_server.py	/^    def restore_backup(self, cloud_server_id, name):$/;"	m	class:CloudServerAPI
+resume	speedycloud/products/cdn.py	/^    def resume(self, id):$/;"	m	class:CDNAPI
+resume	speedycloud/products/cloud_server.py	/^    def resume(self, cloud_server_id):$/;"	m	class:CloudServerAPI
+rollback_snapshot	speedycloud/products/cloud_volume.py	/^    def rollback_snapshot(self, cloud_volume_id, snapshot):$/;"	m	class:CloudVolumeAPI
+set_alias	speedycloud/products/cloud_server.py	/^    def set_alias(self, cloud_server_id, alias):$/;"	m	class:CloudServerAPI
+set_alias	speedycloud/products/cloud_volume.py	/^    def set_alias(self, cloud_volume_id, alias):$/;"	m	class:CloudVolumeAPI
+set_alias	speedycloud/products/network.py	/^    def set_alias(self, network_id, alias):$/;"	m	class:NetworkAPI
+set_alias	speedycloud/products/router.py	/^    def set_alias(self, id, alias):$/;"	m	class:RouterAPI
+set_group	speedycloud/products/cdn.py	/^    def set_group(self, id, group):$/;"	m	class:CDNAPI
+set_group	speedycloud/products/cloud_server.py	/^    def set_group(self, cloud_server_id, group):$/;"	m	class:CloudServerAPI
+set_group	speedycloud/products/cloud_volume.py	/^    def set_group(self, cloud_volume_id, group):$/;"	m	class:CloudVolumeAPI
+set_group	speedycloud/products/network.py	/^    def set_group(self, network_id, group):$/;"	m	class:NetworkAPI
+set_group	speedycloud/products/router.py	/^    def set_group(self, id, group_name):$/;"	m	class:RouterAPI
+set_tag	speedycloud/products/cloud_server.py	/^    def set_tag(self, id, tag):$/;"	m	class:CloudServerAPI
+set_tag	speedycloud/products/cloud_volume.py	/^    def set_tag(self, cloud_volume_id, tag):$/;"	m	class:CloudVolumeAPI
+setup	setup.py	/^from distutils.core import setup$/;"	i
+snapshots	speedycloud/products/cloud_volume.py	/^    def snapshots(self, cloud_volume_id):$/;"	m	class:CloudVolumeAPI
+socket	speedycloud/object_storage/__init__.py	/^import socket$/;"	i
+socket	speedycloud/products/__init__.py	/^import socket$/;"	i
+start	speedycloud/products/cloud_server.py	/^    def start(self, cloud_server_id):$/;"	m	class:CloudServerAPI
+start	speedycloud/products/router.py	/^    def start(self, id):$/;"	m	class:RouterAPI
+stop	speedycloud/products/cloud_server.py	/^    def stop(self, cloud_server_id):$/;"	m	class:CloudServerAPI
+stop	speedycloud/products/router.py	/^    def stop(self, id):$/;"	m	class:RouterAPI
+storing_object_data	speedycloud/object_storage/object_storage.py	/^    def storing_object_data(self, bucket, key, update_data, update_type):$/;"	m	class:ObjectStorageAPI
+support_features	speedycloud/products/router.py	/^    def support_features(self, id):$/;"	m	class:RouterAPI
+suspend	speedycloud/products/cloud_server.py	/^    def suspend(self, cloud_server_id):$/;"	m	class:CloudServerAPI
+sys	setup.py	/^import sys$/;"	i
+threading	speedycloud/object_storage/__init__.py	/^import threading$/;"	i
+threading	speedycloud/products/__init__.py	/^import threading$/;"	i
+time	speedycloud/object_storage/__init__.py	/^import time$/;"	i
+time	speedycloud/products/__init__.py	/^import time$/;"	i
+toggle_private_network	speedycloud/products/router.py	/^    def toggle_private_network(self, id):$/;"	m	class:RouterAPI
+update_application	speedycloud/products/load_balancer.py	/^    def update_application(self, load_balancer_id, application_id, frontend, backend, protocol, strategy,$/;"	m	class:LoadBalancerAPI
+update_backend	speedycloud/products/load_balancer.py	/^    def update_backend(self, load_balancer_id, back_id, weight, ip_address):$/;"	m	class:LoadBalancerAPI
+update_bucket_acl	speedycloud/object_storage/object_storage.py	/^    def update_bucket_acl(self, bucket, header_params={}):$/;"	m	class:ObjectStorageAPI
+update_object_acl	speedycloud/object_storage/object_storage.py	/^    def update_object_acl(self, bucket, key, header_params={}):$/;"	m	class:ObjectStorageAPI
+upload_big_data_one	speedycloud/object_storage/object_storage.py	/^    def upload_big_data_one(self, bucket, key):$/;"	m	class:ObjectStorageAPI
+upload_big_data_put	speedycloud/object_storage/__init__.py	/^    def upload_big_data_put(self, path, data=None, params={}):$/;"	m	class:AbstractProductAPI
+upload_big_data_three	speedycloud/object_storage/object_storage.py	/^    def upload_big_data_three(self, bucket, key, update_data, update_type, upload_id):$/;"	m	class:ObjectStorageAPI
+upload_big_data_two	speedycloud/object_storage/object_storage.py	/^    def upload_big_data_two(self, bucket, key, update_data, update_type, part_number, upload_id):$/;"	m	class:ObjectStorageAPI
+urllib	speedycloud/object_storage/__init__.py	/^import urllib$/;"	i
+urllib	speedycloud/products/__init__.py	/^import urllib$/;"	i
+version	setup.py	/^    version='1.0',$/;"	v
+vod_detail	speedycloud/products/video.py	/^    def vod_detail(self, id):$/;"	m	class:VideoAPI
+vods	speedycloud/products/video.py	/^    def vods(self):$/;"	m	class:VideoAPI

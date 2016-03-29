@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
-from speedycloud.object_storage import AbstractProductAPI
+from speedycloud.storage import AbstractProductAPI
 from lxml import etree
-import urllib
 
 
 class ObjectStorageAPI(AbstractProductAPI):
@@ -17,8 +16,49 @@ class ObjectStorageAPI(AbstractProductAPI):
             bucket: 桶名
         注意： bucket参数为''时，可查看所有桶
         '''
+        # dicts = {}
+        # contentss = []
+        # owner_dict = {}
+        # path = self._get_path('%s' % bucket)
+        # xml = self.get(path)
+        # root = etree.fromstring(xml)
+        # xml_ns = "./{http://s3.amazonaws.com/doc/2006-03-01/}%s"
+        # dicts['Name'] = root.find(
+        #     xml_ns % ("Name")).text
+        # dicts['Prefix'] = root.find(
+        #     xml_ns % ("Prefix")).text
+        # dicts['Marker'] = root.find(
+        #     xml_ns % ("Marker")).text
+        # dicts['MaxKeys'] = root.find(
+        #     xml_ns % ("MaxKeys")).text
+        # dicts['IsTruncated'] = root.find(
+        #     xml_ns % ("IsTruncated")).text
+        # contents = root.findall(
+        #     xml_ns % ("Contents"))
+        # for content in contents:
+        #     content_dict = {}
+        #     content_dict['Key'] = content.find(
+        #         xml_ns % ('Key')).text
+        #     content_dict['LastModified'] = content.find(
+        #         xml_ns % ('LastModified')).text
+        #     content_dict['ETag'] = content.find(
+        #         xml_ns % ('ETag')).text
+        #     content_dict['Size'] = content.find(
+        #         xml_ns % ('Size')).text
+        #     content_dict['StorageClass'] = content.find(
+        #         xml_ns % ('StorageClass')).text
+        #     owners = content.find(
+        #         xml_ns % ('Owner'))
+        #     owner_dict['ID'] = owners.find(
+        #         xml_ns % ('ID')).text
+        #     owner_dict['DisplayName'] = owners.find(
+        #         xml_ns % ('DisplayName')).text
+        #     content_dict['Owner'] = owner_dict
+        #     contentss.append(content_dict)
+        # dicts['Content'] = contentss
         path = self._get_path('%s' % bucket)
         return self.get(path)
+        # return dicts
 
     def create_bucket(self, bucket):
         '''
@@ -48,19 +88,9 @@ class ObjectStorageAPI(AbstractProductAPI):
         path = self._get_path('%s?acl' % bucket)
         return self.get(path)
 
-    def query_object_acl(self, bucket, key):
-        '''
-        查询桶内对象的权限
-        参数:
-            bucket: 桶名
-            key: 对象名
-        '''
-        path = self._get_path('%s/%s?acl' % (bucket, key))
-        return self.get(path)
-
     def delete_object_data(self, bucket, key):
         '''
-        删除桶内非版本管理对象
+        删除桶内对象
         注意： 删除成功不是返回200
         参数:
             bucket: 桶名
@@ -69,44 +99,14 @@ class ObjectStorageAPI(AbstractProductAPI):
         path = self._get_path('%s/%s' % (bucket, key))
         return self.delete(path)
 
-    def delete_versioning_object(self, bucket, key, versionId):
+    def query_object_version(self, bucket, key):
         '''
-        删除桶内版本管理对象
-        :param bucket: 桶名
-        :param key: 对象名
-        :param versionId: 对象名
-        :return:
+        查询存储桶内对象的版本信息
+        参数:
+            bucket: 桶名
+            key: 对象名
         '''
-        path = self._get_path("%s/%s?versionId=%s" % (bucket, key, versionId))
-        return self.delete(path)
-
-    def configure_versioning(self, bucket, status):
-        '''
-        设置版本控制
-        :param bucket: 桶名
-        :param status: 状态("Enabled"或者"Suspended")
-        :return:
-        '''
-        path = self._get_path("%s?versioning" % bucket)
-        VersioningBody = """<?xml version="1.0" encoding="UTF-8"?>
-        <VersioningConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
-          <Status>%s</Status>
-        </VersioningConfiguration>"""
-        body = VersioningBody % status
-        return self.put(path, data=body)
-
-    def get_bucket_versioning(self, bucket):
-        '''
-            查看当前桶的版本控制信息，返回桶的状态（"Enabled"或者"Suspended"或者""）
-        '''
-        path = self._get_path("%s?versioning" % bucket)
-        return self.get(path)
-
-    def get_object_versions(self, bucket):
-        '''
-            获取当前桶内的所有对象的所有版本信息
-        '''
-        path = self._get_path("%s?versions" % bucket)
+        path = self._get_path('%s/%s?versioning' % (bucket, key))
         return self.get(path)
 
     def download_object_data(self, bucket, key):
@@ -150,27 +150,7 @@ class ObjectStorageAPI(AbstractProductAPI):
                         authenticated-read：自己拥有全部权限，被授权的用户拥有读权限
         '''
 
-        path = self._get_path('%s/%s?acl' % (bucket, urllib.quote(key)))
-        return self.put(path, params=header_params)
-
-    def update_versioning_object_acl(self, bucket, key, versionId, header_params={}):
-        '''
-        修改桶内版本管理对象的权限
-        参数:
-            bucket: 桶名
-            key: 对象名
-            versionId: 对象版本号
-            header_params: 请求头参数， 是一个字典
-                {'x-amz-acl':test}
-                    test: 允许值
-                        private：自己拥有全部权限，其他人没有任何权限
-                        public-read：自己拥有全部权限，其他人拥有读权限
-                        public-read-write：自己拥有全部权限，其他人拥有读写权限
-                        authenticated-read：自己拥有全部权限，被授权的用户拥有读权限
-        '''
-
-        path = self._get_path('%s/%s?acl&versionId=%s' %
-                              (bucket, urllib.quote(key), versionId))
+        path = self._get_path('%s/%s?acl' % (bucket, key))
         return self.put(path, params=header_params)
 
     def storing_object_data(self, bucket, key, update_data, update_type, header_params={}):
@@ -182,14 +162,12 @@ class ObjectStorageAPI(AbstractProductAPI):
             update_data: 对象的内容（文件的路径/字符串）
             update_type: 对象内容类型 允许值 'file','string'
         '''
-        path = self._get_path('%s/%s' % (bucket, urllib.quote(key)))
-        if update_type == 'data':
-            update_content = update_data
+        path = self._get_path('%s/%s' % (bucket, key))
         if update_type == 'file':
             update_content = open(str(update_data), 'rb').read()
         elif update_type == 'string':
             update_content = update_data
-        return self.put(path, update_content, params=header_params)
+        return self.put(path, update_content, header_params)
 
     def upload_big_data_one(self, bucket, key):
         '''
